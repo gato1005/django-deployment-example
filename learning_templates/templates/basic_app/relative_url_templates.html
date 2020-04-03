@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>welcome to relative_url_templates</h1>
+  <a href="{% url 'basic_app:other' %}">The other page</a>
+  <a href="{% url 'admin:index' %}">this is the adimn page</a>
+  <a href="{% url 'index'%}">link to index page</a>
+</body>
+</html>
+
+<!--
+in the href the 'basic_app' is not the name of the folder , it
+is the name of 'app_name' assigned in the urls.py under the basic_app
+folder and the 'other' is the name given in the urlpatterns -->
+
+<!-- to link the admin page we have to type in line 12
+and just to be safe we run the migrations from the cmd
+python manage.py migrate under the top level project dir -->
